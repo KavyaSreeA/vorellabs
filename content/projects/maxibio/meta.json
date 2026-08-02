@@ -1,0 +1,16 @@
+{
+  "name": "MAXIBIO",
+  "year": "2025",
+  "role": "Front-End Engineering",
+  "statement": "Biometric and smart-education technology, presented with authority.",
+  "tags": ["Web", "Biometrics", "LLM"],
+  "stack": ["HTML5", "CSS3", "JavaScript", "LLM Chatbot"],
+  "process": "Translated an Aadhaar-enabled product suite into a clear, trustworthy digital presence.",
+  "architecture": "Hand-built front end integrated with a 24/7 conversational support agent handling product queries autonomously.",
+  "outcome": "Production website with an always-on, LLM-powered support assistant.",
+  "links": {},
+  "accent": "linear-gradient(135deg,#0c0e12,#1c2029)",
+  "gallery": [],
+  "media": [],
+  "docs": []
+}

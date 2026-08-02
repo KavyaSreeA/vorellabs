@@ -1,0 +1,17 @@
+{
+  "name": "BigOminds",
+  "url": "bigominds.com",
+  "year": "2025",
+  "role": "Design & Full-Stack Engineering",
+  "statement": "A learning platform engineered to make complex ideas feel effortless.",
+  "tags": ["Web Platform", "Education", "Production"],
+  "stack": ["React", "Tailwind CSS", "Node.js", "Vercel"],
+  "process": "From requirements to a refined interface system — iterating directly with the client until every screen felt intentional.",
+  "architecture": "Component-driven front end, REST integrations, and a CI/CD deployment pipeline with domain, DNS, and SSL fully managed.",
+  "outcome": "Shipped to production with a fast, responsive, SEO-ready experience.",
+  "links": { "live": "https://bigominds.com/" },
+  "accent": "linear-gradient(135deg,#0c0f14,#1a1f27)",
+  "gallery": [],
+  "media": [],
+  "docs": []
+}

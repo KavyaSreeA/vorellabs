@@ -1,0 +1,17 @@
+{
+  "name": "ITHYNX",
+  "url": "ithynx.com",
+  "year": "2025",
+  "role": "Design & Full-Stack Engineering",
+  "statement": "A technology brand's presence, rebuilt for precision and speed.",
+  "tags": ["Web", "Brand", "Production"],
+  "stack": ["React", "Tailwind CSS", "Framer Motion", "Netlify"],
+  "process": "Editorial layout, motion craft, and a strict typographic system carried across every breakpoint.",
+  "architecture": "Static-optimized front end with progressive enhancement and a managed production deployment.",
+  "outcome": "A production site tuned for performance, clarity, and conversion.",
+  "links": { "live": "https://www.ithynx.com/" },
+  "accent": "linear-gradient(135deg,#0d0d0f,#20232a)",
+  "gallery": [],
+  "media": [],
+  "docs": []
+}
