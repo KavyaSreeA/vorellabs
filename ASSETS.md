@@ -11,15 +11,18 @@ public/logo.png            # transparent PNG, square, ~512px
 ```
 
 ## Founder photography — /public/founder/
-Used by the scroll-crossfade "About" section (5 shots) and the Founder coda.
+Used by the scroll-crossfade "About" section and the Founder coda. The photo
+list is an array in `lib/content.ts` (`FOUNDER.photos`) — filenames don't need
+to follow a fixed convention, just point `src`/the coda `<img>` at whatever's
+actually in this folder and give each a short caption.
 ```
-public/founder/1.jpg       # Leadership (formal)          — portrait, ~1200×1500
-public/founder/2.jpg       # Public speaking
-public/founder/3.jpg       # Technical presentation
-public/founder/4.jpg       # Teaching / mentoring
-public/founder/5.jpg       # Casual portrait
-public/founder/portrait.jpg # used in the closing Founder section
+public/founder/image.png    # Leadership — St. Joseph's, formal, trophies
+public/founder/kavya2.jpg   # Technical presentation — at the podium
+public/founder/kavya5.jpg   # Smart India Hackathon — Winner (also the Founder coda portrait)
+public/founder/kavya3.jpg   # Off the clock — casual portrait
 ```
+Wired in [`lib/content.ts`](lib/content.ts) (`FOUNDER.photos`) and
+[`components/Founder.tsx`](components/Founder.tsx) (closing portrait).
 
 ## Projects — /public/projects/<slug>/
 Each case study owns a folder. The immersive chapters use `desktop.jpg` and

@@ -11,6 +11,8 @@
   "outcome": "Shipped to production with a fast, responsive, SEO-ready experience.",
   "links": { "live": "https://bigominds.com/" },
   "accent": "linear-gradient(135deg,#eef0f2,#e2e5e9)",
+  "desktopFile": "desktop.png",
+  "mobileFile": "mobile.jpg",
   "gallery": [],
   "media": [],
   "docs": []

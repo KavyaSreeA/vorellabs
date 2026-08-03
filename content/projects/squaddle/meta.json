@@ -11,6 +11,8 @@
   "outcome": "Live in production with authentication, data, and a polished UI.",
   "links": { "live": "https://www.squaddle.in/" },
   "accent": "linear-gradient(135deg,#f0efec,#e7e4de)",
+  "desktopFile": "desktop.png",
+  "mobileFile": "mobile.jpg",
   "gallery": [],
   "media": [],
   "docs": []

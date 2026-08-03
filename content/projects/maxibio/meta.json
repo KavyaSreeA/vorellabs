@@ -10,6 +10,8 @@
   "outcome": "Production website with an always-on, LLM-powered support assistant.",
   "links": {},
   "accent": "linear-gradient(135deg,#eef0f2,#e3e6ea)",
+  "desktopFile": "desktop.png",
+  "mobileFile": "mobile.png",
   "gallery": [],
   "media": [],
   "docs": []

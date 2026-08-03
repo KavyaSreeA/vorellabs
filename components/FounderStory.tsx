@@ -43,7 +43,7 @@ function Photo({
           alt=""
           aria-hidden
           onError={() => setFailed(true)}
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-cover object-top"
         />
       )}
       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/10" />

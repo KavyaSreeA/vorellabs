@@ -50,6 +50,7 @@ is missing, so you can register a project before every asset is ready.
 | `highlight` |  | A recognition/award to surface in this case study |
 | `links` |  | `{ live, repo, docs }` |
 | `accent` | ✓ | CSS gradient used behind the screenshots |
+| `desktopFile`, `mobileFile`, `coverFile` |  | Override the default filename (default: `desktop.jpg`, `mobile.jpg`, `cover.jpg`). Use this if your screenshot is a `.png` or has a different name — no need to rename the file. |
 | `gallery`, `media`, `docs` |  | Filenames inside the matching `public/` subfolders |
 
 The resolved `Project` type (with absolute asset URLs) lives in

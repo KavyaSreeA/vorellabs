@@ -31,7 +31,7 @@ function Shot({
           alt=""
           aria-hidden
           onError={() => setFailed(true)}
-          className="absolute inset-0 h-full w-full object-cover object-top"
+          className="absolute inset-0 h-full w-full object-cover object-left-top"
         />
       )}
     </div>
@@ -102,7 +102,7 @@ function Chapter({ project, index }: { project: Project; index: number }) {
             <Shot
               src={project.assets.desktop}
               accent={project.accent}
-              ratio="aspect-[16/10]"
+              ratio="aspect-[16/9]"
               hint="Desktop experience"
             />
           </div>

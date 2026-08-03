@@ -19,13 +19,11 @@ export const FOUNDER = {
   location: "Chennai, Tamil Nadu, India",
   email: "kavyasree7860@gmail.com",
   phone: "+91 87782 74334",
-  // Drop 5 images at /public/founder/1.jpg … 5.jpg (see ASSETS.md)
   photos: [
-    { src: "/founder/1.jpg", label: "Leadership" },
-    { src: "/founder/2.jpg", label: "Public speaking" },
-    { src: "/founder/3.jpg", label: "Technical presentation" },
-    { src: "/founder/4.jpg", label: "Teaching / mentoring" },
-    { src: "/founder/5.jpg", label: "Portrait" },
+    { src: "/founder/image.png", label: "Leadership" },
+    { src: "/founder/kavya2.jpg", label: "Technical presentation" },
+    { src: "/founder/kavya5.jpg", label: "Smart India Hackathon — Winner" },
+    { src: "/founder/kavya3.jpg", label: "Off the clock" },
   ],
 };
 

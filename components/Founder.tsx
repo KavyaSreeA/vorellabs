@@ -43,11 +43,11 @@ export default function Founder() {
             {!failed && (
               // eslint-disable-next-line @next/next/no-img-element
               <img
-                src="/founder/portrait.jpg"
+                src="/founder/kavya5.jpg"
                 alt=""
                 aria-hidden
                 onError={() => setFailed(true)}
-                className="absolute inset-0 h-full w-full object-cover"
+                className="absolute inset-0 h-full w-full object-cover object-top"
               />
             )}
           </motion.div>

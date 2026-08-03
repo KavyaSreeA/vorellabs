@@ -11,6 +11,8 @@
   "outcome": "A production site tuned for performance, clarity, and conversion.",
   "links": { "live": "https://www.ithynx.com/" },
   "accent": "linear-gradient(135deg,#edeef0,#e4e6ea)",
+  "desktopFile": "desktop.png",
+  "mobileFile": "mobile.png",
   "gallery": [],
   "media": [],
   "docs": []

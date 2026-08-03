@@ -29,9 +29,9 @@ function resolve(slug: string, meta: ProjectMeta): Project {
     ...meta,
     slug,
     assets: {
-      cover: `${root}/cover.jpg`,
-      desktop: `${root}/desktop.jpg`,
-      mobile: `${root}/mobile.jpg`,
+      cover: `${root}/${meta.coverFile ?? "cover.jpg"}`,
+      desktop: `${root}/${meta.desktopFile ?? "desktop.jpg"}`,
+      mobile: `${root}/${meta.mobileFile ?? "mobile.jpg"}`,
       logo: `${root}/logo.svg`,
       gallery: (meta.gallery ?? []).map((f) => `${root}/gallery/${f}`),
       media: (meta.media ?? []).map((f) => `${root}/media/${f}`),

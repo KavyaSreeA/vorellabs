@@ -26,6 +26,9 @@ export type ProjectMeta = {
   highlight?: string; // an achievement/recognition to surface in this case study
   links?: ProjectLinks;
   accent: string;
+  desktopFile?: string; // filename (with extension) inside /public/projects/<slug>/, default "desktop.jpg"
+  mobileFile?: string; // filename (with extension) inside /public/projects/<slug>/, default "mobile.jpg"
+  coverFile?: string; // filename (with extension) inside /public/projects/<slug>/, default "cover.jpg"
   gallery?: string[]; // filenames inside /public/projects/<slug>/gallery/
   media?: string[]; // filenames inside /public/projects/<slug>/media/
   docs?: string[]; // filenames inside /public/projects/<slug>/docs/
