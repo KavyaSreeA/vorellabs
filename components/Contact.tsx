@@ -16,7 +16,7 @@ export default function Contact() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(55% 55% at 50% 45%, rgba(180,190,200,0.10), transparent 70%)",
+            "radial-gradient(55% 55% at 50% 45%, rgba(10,10,11,0.10), transparent 70%)",
         }}
       />
       <div className="shell relative w-full text-center">
@@ -53,7 +53,7 @@ export default function Contact() {
           <Magnetic>
             <a
               href={`mailto:${FOUNDER.email}`}
-              className="group inline-flex items-center gap-2 rounded-full bg-white px-8 py-3.5 text-sm font-medium text-black transition-transform duration-300 hover:-translate-y-0.5"
+              className="group inline-flex items-center gap-2 rounded-full bg-silver-light px-8 py-3.5 text-sm font-medium text-base transition-transform duration-300 hover:-translate-y-0.5"
             >
               {FOUNDER.email}
               <span className="transition-transform duration-300 group-hover:translate-x-1">
@@ -63,7 +63,7 @@ export default function Contact() {
           </Magnetic>
           <a
             href={`tel:${FOUNDER.phone.replace(/\s/g, "")}`}
-            className="inline-flex items-center gap-2 rounded-full border border-white/15 px-8 py-3.5 text-sm font-medium text-silver-light transition-all duration-300 hover:border-white/40 hover:bg-white/[0.04]"
+            className="inline-flex items-center gap-2 rounded-full border border-black/15 px-8 py-3.5 text-sm font-medium text-silver-light transition-all duration-300 hover:border-black/40 hover:bg-black/[0.04]"
           >
             {FOUNDER.phone}
           </a>

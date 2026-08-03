@@ -9,7 +9,7 @@
   "architecture": "Hand-built front end integrated with a 24/7 conversational support agent handling product queries autonomously.",
   "outcome": "Production website with an always-on, LLM-powered support assistant.",
   "links": {},
-  "accent": "linear-gradient(135deg,#0c0e12,#1c2029)",
+  "accent": "linear-gradient(135deg,#eef0f2,#e3e6ea)",
   "gallery": [],
   "media": [],
   "docs": []

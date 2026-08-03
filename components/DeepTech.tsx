@@ -24,7 +24,7 @@ export default function DeepTech() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(45% 45% at 50% 50%, rgba(150,160,170,0.08), transparent 70%)",
+            "radial-gradient(45% 45% at 50% 50%, rgba(10,10,11,0.08), transparent 70%)",
         }}
       />
       <div className="shell relative">
@@ -56,7 +56,7 @@ export default function DeepTech() {
                 y1={CENTER.y}
                 x2={n.x}
                 y2={n.y}
-                stroke="rgba(255,255,255,0.16)"
+                stroke="rgba(10,10,11,0.16)"
                 strokeWidth={1}
                 initial={{ pathLength: 0, opacity: 0 }}
                 whileInView={{ pathLength: 1, opacity: 1 }}
@@ -71,7 +71,7 @@ export default function DeepTech() {
               cy={CENTER.y}
               r={44}
               fill="none"
-              stroke="rgba(255,255,255,0.25)"
+              stroke="rgba(10,10,11,0.25)"
               initial={{ scale: 0, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               viewport={{ once: true }}
@@ -82,7 +82,7 @@ export default function DeepTech() {
               cx={CENTER.x}
               cy={CENTER.y}
               r={6}
-              fill="#ffffff"
+              fill="#0a0a0b"
               animate={{ opacity: [0.6, 1, 0.6] }}
               transition={{ duration: 2.4, repeat: Infinity, ease: "easeInOut" }}
             />
@@ -107,7 +107,7 @@ export default function DeepTech() {
                 style={{ transformOrigin: `${n.x}px ${n.y}px` }}
               >
                 <circle cx={n.x} cy={n.y} r={4} fill="#c7ccd1" />
-                <circle cx={n.x} cy={n.y} r={11} fill="none" stroke="rgba(255,255,255,0.14)" />
+                <circle cx={n.x} cy={n.y} r={11} fill="none" stroke="rgba(10,10,11,0.14)" />
                 <text
                   x={n.x}
                   y={n.y > CENTER.y ? n.y + 30 : n.y - 20}

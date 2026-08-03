@@ -31,13 +31,13 @@ export default function Founder() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.9, ease }}
-            className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-white/[0.08]"
+            className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-black/[0.08]"
           >
             <div
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(160deg,#14171c,#0a0b0d 70%),radial-gradient(60% 50% at 30% 20%,rgba(200,210,220,0.10),transparent)",
+                  "linear-gradient(160deg,#ececed,#f6f6f7 70%),radial-gradient(60% 50% at 30% 20%,rgba(10,10,11,0.05),transparent)",
               }}
             />
             {!failed && (
@@ -72,14 +72,14 @@ export default function Founder() {
               <span>{FOUNDER.location}</span>
               <a
                 href={`mailto:${FOUNDER.email}`}
-                className="text-silver-light transition-colors hover:text-white"
+                className="text-silver-light transition-colors hover:text-black"
               >
                 {FOUNDER.email}
               </a>
             </div>
 
             {/* recognition — woven in, not a standalone "wins" section */}
-            <div className="mt-10 border-t border-white/[0.08] pt-8">
+            <div className="mt-10 border-t border-black/[0.08] pt-8">
               <p className="text-[11px] uppercase tracking-[0.28em] text-silver-dim">
                 Recognition
               </p>
@@ -91,7 +91,7 @@ export default function Founder() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.15 + i * 0.06, ease }}
-                    className="flex items-baseline justify-between gap-4 border-b border-white/[0.05] pb-3"
+                    className="flex items-baseline justify-between gap-4 border-b border-black/[0.05] pb-3"
                   >
                     <span className="text-[15px] text-silver-light">
                       {a.title}

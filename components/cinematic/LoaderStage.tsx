@@ -27,20 +27,20 @@ export default function LoaderStage({
       }}
     >
       <Suspense fallback={null}>
-        <ambientLight intensity={0.22} />
-        <directionalLight position={[5, 6, 4]} intensity={2.4} color="#ffffff" />
+        <ambientLight intensity={0.1} />
+        <directionalLight position={[5, 6, 4]} intensity={1.5} color="#ffffff" />
         <directionalLight position={[-6, -3, -5]} intensity={1.0} color="#7f858c" />
         <LoaderV reduced={reduced} exiting={exiting} />
         <Dust reduced={reduced} />
-        <Environment preset="studio" environmentIntensity={0.9} />
+        <Environment preset="studio" environmentIntensity={0.32} />
         {!reduced && (
           <EffectComposer>
             <Bloom
-              intensity={0.55}
-              luminanceThreshold={0.72}
+              intensity={0.1}
+              luminanceThreshold={0.86}
               luminanceSmoothing={0.5}
               mipmapBlur
-              radius={0.7}
+              radius={0.6}
             />
           </EffectComposer>
         )}

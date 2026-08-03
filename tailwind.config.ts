@@ -8,12 +8,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        base: "#050505",
-        surface: "#0a0a0c",
+        // Light theme. Token NAMES are kept (silver-*) but now hold dark ink
+        // values so existing components invert without a class-wide rename.
+        base: "#f5f5f6", // page background (soft off-white)
+        surface: "#ffffff", // cards / raised surfaces
         silver: {
-          DEFAULT: "#c7ccd1",
-          light: "#eef1f4",
-          dim: "#8a9099",
+          DEFAULT: "#3d3d44", // body text (mid ink)
+          light: "#0a0a0b", // strongest text (near-black)
+          dim: "#78787f", // captions / dim text
         },
       },
       fontFamily: {

@@ -10,7 +10,7 @@
   "architecture": "Component-driven front end, REST integrations, and a CI/CD deployment pipeline with domain, DNS, and SSL fully managed.",
   "outcome": "Shipped to production with a fast, responsive, SEO-ready experience.",
   "links": { "live": "https://bigominds.com/" },
-  "accent": "linear-gradient(135deg,#0c0f14,#1a1f27)",
+  "accent": "linear-gradient(135deg,#eef0f2,#e2e5e9)",
   "gallery": [],
   "media": [],
   "docs": []

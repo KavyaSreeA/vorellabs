@@ -36,18 +36,18 @@ export default function HeroV({ reduced }: { reduced: boolean }) {
     <group ref={group} scale={SCALE}>
       <mesh geometry={vGeo}>
         <meshStandardMaterial
-          color="#d3d8dd"
-          metalness={1}
-          roughness={0.16}
-          envMapIntensity={1.6}
+          color="#9096a0"
+          metalness={0.8}
+          roughness={0.5}
+          envMapIntensity={0.5}
         />
       </mesh>
       <mesh geometry={spineGeo} position={[0, 0, 0.02]}>
         <meshStandardMaterial
-          color="#f4f6f8"
-          metalness={1}
-          roughness={0.07}
-          envMapIntensity={1.9}
+          color="#9aa0aa"
+          metalness={0.8}
+          roughness={0.4}
+          envMapIntensity={0.55}
         />
       </mesh>
     </group>

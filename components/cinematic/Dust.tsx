@@ -55,12 +55,12 @@ export default function Dust({ reduced }: { reduced: boolean }) {
       <pointsMaterial
         ref={mat}
         size={0.018}
-        color="#c7ccd1"
+        color="#4a4a50"
         transparent
         opacity={0}
         sizeAttenuation
         depthWrite={false}
-        blending={THREE.AdditiveBlending}
+        blending={THREE.NormalBlending}
       />
     </points>
   );

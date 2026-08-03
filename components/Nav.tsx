@@ -30,7 +30,7 @@ export default function Nav() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed inset-x-0 top-0 z-50 border-b border-white/[0.06] bg-black/50 backdrop-blur-xl"
+          className="fixed inset-x-0 top-0 z-50 border-b border-black/[0.06] bg-white/70 backdrop-blur-xl"
         >
           <nav className="shell flex h-[64px] items-center justify-between">
             <a href="#top" className="flex items-center gap-2.5">
@@ -55,14 +55,14 @@ export default function Nav() {
             <div className="flex items-center gap-3">
               <a
                 href="#contact"
-                className="hidden rounded-full border border-white/15 px-5 py-2 text-[13px] font-medium text-silver-light transition-all duration-300 hover:border-white/40 hover:bg-white/[0.04] md:inline-flex"
+                className="hidden rounded-full border border-black/15 px-5 py-2 text-[13px] font-medium text-silver-light transition-all duration-300 hover:border-black/40 hover:bg-black/[0.04] md:inline-flex"
               >
                 Start a project
               </a>
               <button
                 aria-label="Toggle menu"
                 onClick={() => setOpen((v) => !v)}
-                className="flex h-9 w-9 items-center justify-center rounded-full border border-white/12 md:hidden"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-black/12 md:hidden"
               >
                 <div className="space-y-[5px]">
                   <span className={`block h-px w-4 bg-silver-light transition-transform ${open ? "translate-y-[6px] rotate-45" : ""}`} />
@@ -77,7 +77,7 @@ export default function Nav() {
             initial={false}
             animate={{ height: open ? "auto" : 0, opacity: open ? 1 : 0 }}
             transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="overflow-hidden border-t border-white/[0.06] md:hidden"
+            className="overflow-hidden border-t border-black/[0.06] md:hidden"
           >
             <div className="shell flex flex-col gap-1 py-4">
               {LINKS.map((l) => (
@@ -93,7 +93,7 @@ export default function Nav() {
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
-                className="mt-2 inline-flex w-fit rounded-full border border-white/15 px-5 py-2 text-sm text-silver-light"
+                className="mt-2 inline-flex w-fit rounded-full border border-black/15 px-5 py-2 text-sm text-silver-light"
               >
                 Start a project
               </a>

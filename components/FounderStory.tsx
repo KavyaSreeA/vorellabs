@@ -26,7 +26,7 @@ function Photo({
         className="absolute inset-0 flex items-end p-8"
         style={{
           background:
-            "linear-gradient(160deg,#14171c,#0a0b0d 70%),radial-gradient(60% 50% at 30% 20%,rgba(200,210,220,0.10),transparent)",
+            "linear-gradient(160deg,#ececed,#f6f6f7 70%),radial-gradient(60% 50% at 30% 20%,rgba(10,10,11,0.05),transparent)",
         }}
       >
         <span
@@ -72,7 +72,7 @@ export default function FounderStory() {
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <div className="shell grid w-full items-center gap-10 md:grid-cols-2 md:gap-16">
           {/* crossfading photography */}
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-white/[0.08]">
+          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-black/[0.08]">
             {FOUNDER.photos.map((p, i) => (
               <Photo key={p.src} src={p.src} label={p.label} active={i === index} />
             ))}
@@ -82,7 +82,7 @@ export default function FounderStory() {
                 <span
                   key={i}
                   className={`h-1 rounded-full transition-all duration-500 ${
-                    i === index ? "w-6 bg-white" : "w-1.5 bg-white/30"
+                    i === index ? "w-6 bg-black" : "w-1.5 bg-black/30"
                   }`}
                 />
               ))}

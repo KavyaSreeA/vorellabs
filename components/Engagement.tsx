@@ -13,7 +13,7 @@ export default function Engagement() {
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(45% 45% at 50% 20%, rgba(150,160,170,0.06), transparent 70%)",
+            "radial-gradient(45% 45% at 50% 20%, rgba(10,10,11,0.06), transparent 70%)",
         }}
       />
       <div className="shell relative">
@@ -44,10 +44,10 @@ export default function Engagement() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.8, delay: i * 0.12, ease }}
-              className="group relative flex flex-col overflow-hidden rounded-[20px] border border-white/[0.08] p-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-white/20 md:p-10"
+              className="group relative flex flex-col overflow-hidden rounded-[20px] border border-black/[0.08] p-8 shadow-[0_1px_2px_rgba(10,10,11,0.04)] transition-all duration-500 hover:-translate-y-1.5 hover:border-black/20 hover:shadow-[0_30px_70px_-30px_rgba(10,10,11,0.22)] md:p-10"
               style={{
                 background:
-                  "linear-gradient(165deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.015) 42%, rgba(255,255,255,0.008) 100%)",
+                  "linear-gradient(165deg, #ffffff 0%, #fcfcfd 100%)",
               }}
             >
               {/* soft hover lighting */}
@@ -55,11 +55,11 @@ export default function Engagement() {
                 className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-700 group-hover:opacity-100"
                 style={{
                   background:
-                    "radial-gradient(90% 55% at 50% 0%, rgba(205,215,225,0.12), transparent 70%)",
+                    "radial-gradient(90% 55% at 50% 0%, rgba(10,10,11,0.05), transparent 70%)",
                 }}
               />
               {/* metallic top hairline on hover */}
-              <span className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent opacity-0 transition-opacity duration-700 group-hover:opacity-100" />
+              <span className="pointer-events-none absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-black/40 to-transparent opacity-0 transition-opacity duration-700 group-hover:opacity-100" />
 
               <div className="relative flex flex-1 flex-col">
                 <span className="font-display text-sm tracking-[0.2em] text-silver-dim">
@@ -78,7 +78,7 @@ export default function Engagement() {
                   {tier.desc}
                 </p>
 
-                <div className="my-8 h-px w-full bg-white/[0.07]" />
+                <div className="my-8 h-px w-full bg-black/[0.07]" />
 
                 <ul className="flex-1 space-y-3.5">
                   {tier.features.map((f) => (
@@ -96,7 +96,7 @@ export default function Engagement() {
                   href={`mailto:${FOUNDER.email}?subject=${encodeURIComponent(
                     `${tier.name} — Vorel Labs`
                   )}`}
-                  className="group/cta mt-10 inline-flex items-center justify-between gap-4 rounded-full border border-white/15 px-6 py-3.5 text-sm font-medium text-silver-light transition-all duration-300 hover:border-white/40 hover:bg-white/[0.05]"
+                  className="group/cta mt-10 inline-flex items-center justify-between gap-4 rounded-full border border-black/15 px-6 py-3.5 text-sm font-medium text-silver-light transition-all duration-300 hover:border-black/40 hover:bg-black/[0.05]"
                 >
                   {tier.cta}
                   <span className="transition-transform duration-300 group-hover/cta:translate-x-1">

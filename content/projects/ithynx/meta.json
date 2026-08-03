@@ -10,7 +10,7 @@
   "architecture": "Static-optimized front end with progressive enhancement and a managed production deployment.",
   "outcome": "A production site tuned for performance, clarity, and conversion.",
   "links": { "live": "https://www.ithynx.com/" },
-  "accent": "linear-gradient(135deg,#0d0d0f,#20232a)",
+  "accent": "linear-gradient(135deg,#edeef0,#e4e6ea)",
   "gallery": [],
   "media": [],
   "docs": []

@@ -72,10 +72,10 @@ export default function Pipeline() {
             {/* index rail */}
             <div className="relative flex gap-6">
               {/* rail */}
-              <div className="relative mt-2 w-px flex-none bg-white/[0.08]">
+              <div className="relative mt-2 w-px flex-none bg-black/[0.08]">
                 <motion.div
                   style={{ height: railFill }}
-                  className="absolute left-0 top-0 w-px bg-gradient-to-b from-white to-silver-dim"
+                  className="absolute left-0 top-0 w-px bg-gradient-to-b from-black to-silver-dim"
                 />
               </div>
 
@@ -99,7 +99,7 @@ export default function Pipeline() {
                           className={`font-display text-2xl font-semibold tracking-tightest transition-all duration-500 md:text-[2rem] ${
                             on
                               ? "text-silver-light"
-                              : "text-white/25 group-hover:text-white/45"
+                              : "text-black/25 group-hover:text-black/45"
                           }`}
                         >
                           {s.stage}
@@ -122,10 +122,10 @@ export default function Pipeline() {
                   transition={{ duration: 0.5, ease }}
                 >
                   <div className="flex items-center gap-4">
-                    <span className="font-display text-[clamp(3.5rem,10vw,7rem)] font-semibold leading-none tracking-tightest text-white/[0.07]">
+                    <span className="font-display text-[clamp(3.5rem,10vw,7rem)] font-semibold leading-none tracking-tightest text-black/[0.07]">
                       {stage.n}
                     </span>
-                    <span className="h-px flex-1 bg-white/10" />
+                    <span className="h-px flex-1 bg-black/10" />
                   </div>
 
                   <h3 className="mt-6 font-display text-4xl font-semibold tracking-tightest text-silver-light md:text-5xl">
@@ -142,7 +142,7 @@ export default function Pipeline() {
                         initial={{ opacity: 0, y: 8 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.15 + ti * 0.06, duration: 0.4 }}
-                        className="rounded-lg border border-white/[0.08] bg-white/[0.02] px-3.5 py-1.5 text-[13px] text-silver"
+                        className="rounded-lg border border-black/[0.08] bg-black/[0.02] px-3.5 py-1.5 text-[13px] text-silver"
                       >
                         {t}
                       </motion.span>
@@ -156,7 +156,7 @@ export default function Pipeline() {
                 <span className="tabular-nums text-silver-light">
                   {String(active + 1).padStart(2, "0")}
                 </span>
-                <span className="h-px w-8 bg-white/15" />
+                <span className="h-px w-8 bg-black/15" />
                 <span className="tabular-nums">
                   {String(PIPELINE.length).padStart(2, "0")}
                 </span>

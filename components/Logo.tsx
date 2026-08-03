@@ -25,26 +25,26 @@ export function LogoDefs() {
   return (
     <defs>
       <linearGradient id="vl-a" x1="8" y1="16" x2="46" y2="70" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#ffffff" />
-        <stop offset="0.5" stopColor="#d3d8dd" />
-        <stop offset="1" stopColor="#8a9099" />
+        <stop stopColor="#4a4e55" />
+        <stop offset="0.5" stopColor="#2a2d31" />
+        <stop offset="1" stopColor="#0d0e10" />
       </linearGradient>
       <linearGradient id="vl-b" x1="92" y1="16" x2="54" y2="70" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#e9edf0" />
-        <stop offset="0.55" stopColor="#9aa0a7" />
-        <stop offset="1" stopColor="#4b4f55" />
+        <stop stopColor="#3b3e44" />
+        <stop offset="0.55" stopColor="#1c1e22" />
+        <stop offset="1" stopColor="#000000" />
       </linearGradient>
       <linearGradient id="vl-c" x1="30" y1="20" x2="50" y2="74" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#c2c7cd" />
-        <stop offset="1" stopColor="#70757c" />
+        <stop stopColor="#33363b" />
+        <stop offset="1" stopColor="#0b0c0e" />
       </linearGradient>
       <linearGradient id="vl-d" x1="70" y1="20" x2="50" y2="74" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#82878e" />
-        <stop offset="1" stopColor="#3b3e43" />
+        <stop stopColor="#4d5158" />
+        <stop offset="1" stopColor="#15171a" />
       </linearGradient>
       <linearGradient id="vl-core" x1="50" y1="16" x2="50" y2="86" gradientUnits="userSpaceOnUse">
-        <stop stopColor="#ffffff" />
-        <stop offset="1" stopColor="#9298a0" />
+        <stop stopColor="#5a5e66" />
+        <stop offset="1" stopColor="#0a0a0b" />
       </linearGradient>
     </defs>
   );

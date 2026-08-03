@@ -82,9 +82,9 @@ export default function LoaderV({
   const shardMat = useMemo(
     () =>
       new THREE.MeshStandardMaterial({
-        color: "#c9ced4",
-        metalness: 1,
-        roughness: 0.24,
+        color: "#7a7f87",
+        metalness: 0.85,
+        roughness: 0.45,
         transparent: true,
         opacity: 1,
       }),
@@ -175,20 +175,20 @@ export default function LoaderV({
         />
         <mesh ref={core} geometry={vGeo} visible={false}>
           <meshStandardMaterial
-            color="#d3d8dd"
-            metalness={1}
-            roughness={0.16}
-            envMapIntensity={1.6}
+            color="#6c7078"
+            metalness={0.82}
+            roughness={0.46}
+            envMapIntensity={0.55}
             transparent
             opacity={0}
           />
         </mesh>
         <mesh ref={spine} geometry={spineGeo} position={[0, 0, 0.02]} visible={false}>
           <meshStandardMaterial
-            color="#f4f6f8"
-            metalness={1}
-            roughness={0.07}
-            envMapIntensity={1.9}
+            color="#8b909a"
+            metalness={0.82}
+            roughness={0.34}
+            envMapIntensity={0.6}
             transparent
             opacity={0}
           />

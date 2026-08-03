@@ -20,7 +20,7 @@ function Milestone({ item, i }: { item: (typeof TIMELINE)[number]; i: number }) 
       </div>
       <div className="relative pl-8 md:pl-10">
         {/* node */}
-        <span className="absolute left-[-5px] top-1.5 h-2.5 w-2.5 rounded-full bg-white shadow-[0_0_16px_2px_rgba(255,255,255,0.5)]" />
+        <span className="absolute left-[-5px] top-1.5 h-2.5 w-2.5 rounded-full bg-silver-light shadow-[0_0_0_5px_rgba(10,10,11,0.06)]" />
         <h3 className="font-display text-xl font-semibold text-silver-light md:text-2xl">
           {item.title}
         </h3>
@@ -59,10 +59,10 @@ export default function Timeline() {
 
         <div ref={ref} className="relative">
           {/* progress rail — sits on the divider between year and content */}
-          <div className="absolute left-[64px] top-0 h-full w-px bg-white/[0.08] md:left-[120px]">
+          <div className="absolute left-[64px] top-0 h-full w-px bg-black/[0.08] md:left-[120px]">
             <motion.div
               style={{ height }}
-              className="w-px bg-gradient-to-b from-white to-silver-dim"
+              className="w-px bg-gradient-to-b from-black to-silver-dim"
             />
           </div>
 

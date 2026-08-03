@@ -13,7 +13,7 @@ const NAV = [
 export default function Footer({ className = "" }: { className?: string }) {
   const year = 2026;
   return (
-    <footer className={`relative border-t border-white/[0.07] py-16 ${className}`}>
+    <footer className={`relative border-t border-black/[0.07] py-16 ${className}`}>
       <div className="shell">
         <div className="flex flex-col justify-between gap-12 md:flex-row md:items-end">
           <div>
@@ -44,7 +44,7 @@ export default function Footer({ className = "" }: { className?: string }) {
           <div className="text-[14px] text-silver-dim">
             <a
               href={`mailto:${FOUNDER.email}`}
-              className="block text-silver-light transition-colors hover:text-white"
+              className="block text-silver-light transition-colors hover:text-black"
             >
               {FOUNDER.email}
             </a>
@@ -52,7 +52,7 @@ export default function Footer({ className = "" }: { className?: string }) {
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-white/[0.07] pt-8 text-[13px] text-silver-dim md:flex-row">
+        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-black/[0.07] pt-8 text-[13px] text-silver-dim md:flex-row">
           <p>© {year} Vorel Labs. All rights reserved.</p>
           <p className="tracking-[0.2em]">BUILDING TOMORROW.</p>
         </div>

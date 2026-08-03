@@ -40,7 +40,7 @@ export default function Hero() {
         <motion.div
           className="absolute inset-0"
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          animate={{ opacity: 0.5 }}
           transition={{ duration: 1.1, ease }}
         >
           {mounted && (
@@ -51,12 +51,22 @@ export default function Hero() {
         </motion.div>
       </motion.div>
 
-      {/* legibility veil */}
+      {/* legibility veil — fades the V toward the page at the edges */}
       <div
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(60% 60% at 50% 50%, transparent 34%, rgba(5,5,5,0.5) 80%, #050505 100%)",
+            "radial-gradient(65% 65% at 50% 50%, transparent 22%, rgba(245,245,246,0.6) 72%, #f5f5f6 100%)",
+        }}
+      />
+
+      {/* soft scrim directly behind the headline so type always reads */}
+      <div
+        className="pointer-events-none absolute left-1/2 top-1/2 h-[60vh] w-[min(92vw,900px)] -translate-x-1/2 -translate-y-1/2"
+        style={{
+          background:
+            "radial-gradient(closest-side, rgba(245,245,246,0.9), rgba(245,245,246,0.55) 55%, transparent 100%)",
+          filter: "blur(6px)",
         }}
       />
 

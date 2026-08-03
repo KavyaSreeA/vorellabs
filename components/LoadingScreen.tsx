@@ -84,20 +84,20 @@ export default function LoadingScreen({
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(120% 120% at 50% 42%, transparent 42%, rgba(0,0,0,0.55) 78%, #050505 100%)",
+            "radial-gradient(120% 120% at 50% 42%, transparent 45%, rgba(245,245,246,0.5) 78%, #f5f5f6 100%)",
         }}
       />
 
       {/* atmospheric fog drift */}
       <div className="loading-fog absolute inset-0 opacity-60" />
 
-      {/* volumetric glow around the logo */}
+      {/* soft radiance around the logo (very subtle on white) */}
       <motion.div
-        className="absolute left-1/2 top-[42%] h-[42vmin] w-[42vmin] -translate-x-1/2 -translate-y-1/2 rounded-full"
+        className="absolute left-1/2 top-[42%] h-[48vmin] w-[48vmin] -translate-x-1/2 -translate-y-1/2 rounded-full"
         style={{
           background:
-            "radial-gradient(circle, rgba(210,220,230,0.16), rgba(150,160,170,0.05) 45%, transparent 68%)",
-          filter: "blur(8px)",
+            "radial-gradient(circle, rgba(10,10,11,0.05), rgba(10,10,11,0.02) 45%, transparent 70%)",
+          filter: "blur(10px)",
         }}
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: [0, 1, 0.85], scale: [0.8, 1, 1.02] }}
@@ -108,27 +108,36 @@ export default function LoadingScreen({
       <div className="grain absolute inset-0" />
 
       {/* typography column, below the 3D logo */}
-      <div className="absolute inset-x-0 top-[58%] flex flex-col items-center px-6 text-center">
-        <div className="flex" style={{ opacity: 0.92 }}>
-          {WORDMARK.split("").map((ch, i) => (
-            <motion.span
-              key={i}
-              className="text-metal font-display text-[clamp(1.4rem,3.4vw,2.1rem)] font-semibold uppercase tracking-[0.52em]"
-              initial={{ opacity: 0, y: 14, filter: "blur(6px)" }}
-              animate={{
-                opacity: ch === " " ? 0 : 1,
-                y: 0,
-                filter: "blur(0px)",
-              }}
-              transition={{ delay: T.wordmark + i * 0.06, duration: 0.6, ease }}
-            >
-              {ch === " " ? "  " : ch}
-            </motion.span>
-          ))}
+      <div className="absolute inset-x-0 top-[57%] flex flex-col items-center px-6 text-center">
+        {/* soft scrim so the wordmark reads over the logo */}
+        <div
+          className="pointer-events-none absolute left-1/2 top-1/2 h-[36vmin] w-[min(94vw,760px)] -translate-x-1/2 -translate-y-1/2"
+          style={{
+            background:
+              "radial-gradient(closest-side, rgba(245,245,246,0.92), rgba(245,245,246,0.55) 55%, transparent 100%)",
+            filter: "blur(6px)",
+          }}
+        />
+        <div className="relative flex items-center">
+          {WORDMARK.split("").map((ch, i) =>
+            ch === " " ? (
+              <span key={i} className="inline-block w-[0.55em]" />
+            ) : (
+              <motion.span
+                key={i}
+                className="font-display text-[clamp(1.4rem,3.4vw,2.1rem)] font-semibold uppercase tracking-[0.5em] text-silver-light"
+                initial={{ opacity: 0, y: 14, filter: "blur(6px)" }}
+                animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+                transition={{ delay: T.wordmark + i * 0.06, duration: 0.6, ease }}
+              >
+                {ch}
+              </motion.span>
+            )
+          )}
         </div>
 
         <motion.p
-          className="mt-5 text-[12px] uppercase tracking-[0.44em] text-silver-dim"
+          className="relative mt-5 text-[12px] font-medium uppercase tracking-[0.42em] text-silver"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: T.tagline, duration: 0.9, ease }}

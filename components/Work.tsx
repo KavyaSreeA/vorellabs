@@ -49,7 +49,7 @@ function Chapter({ project, index }: { project: Project; index: number }) {
   const shotY = useTransform(scrollYProgress, [0, 1], [60, -60]);
 
   return (
-    <section ref={ref} className="relative border-t border-white/[0.06] py-24 md:py-36">
+    <section ref={ref} className="relative border-t border-black/[0.06] py-24 md:py-36">
       <div className="shell">
         {/* chapter marker + statement */}
         <motion.div style={{ y: titleY }} className="relative">
@@ -57,7 +57,7 @@ function Chapter({ project, index }: { project: Project; index: number }) {
             <span className="font-display text-sm text-silver-dim">
               {String(index + 1).padStart(2, "0")}
             </span>
-            <span className="h-px w-16 bg-white/15" />
+            <span className="h-px w-16 bg-black/15" />
             <span className="text-[12px] uppercase tracking-[0.24em] text-silver-dim">
               {project.role} · {project.year}
             </span>
@@ -73,7 +73,7 @@ function Chapter({ project, index }: { project: Project; index: number }) {
               {project.tags.map((t) => (
                 <span
                   key={t}
-                  className="rounded-full border border-white/[0.08] px-3 py-1 text-[11px] uppercase tracking-[0.14em] text-silver-dim"
+                  className="rounded-full border border-black/[0.08] px-3 py-1 text-[11px] uppercase tracking-[0.14em] text-silver-dim"
                 >
                   {t}
                 </span>
@@ -88,13 +88,13 @@ function Chapter({ project, index }: { project: Project; index: number }) {
           className="mt-16 grid items-end gap-6 md:grid-cols-[1.7fr_1fr]"
         >
           {/* desktop browser frame */}
-          <div className="overflow-hidden rounded-xl border border-white/[0.1] bg-surface shadow-[0_40px_120px_-40px_rgba(0,0,0,0.9)]">
-            <div className="flex items-center gap-1.5 border-b border-white/[0.07] px-4 py-3">
-              <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-              <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
-              <span className="h-2.5 w-2.5 rounded-full bg-white/15" />
+          <div className="overflow-hidden rounded-xl border border-black/[0.1] bg-surface shadow-[0_40px_120px_-40px_rgba(10,10,11,0.16)]">
+            <div className="flex items-center gap-1.5 border-b border-black/[0.07] px-4 py-3">
+              <span className="h-2.5 w-2.5 rounded-full bg-black/15" />
+              <span className="h-2.5 w-2.5 rounded-full bg-black/15" />
+              <span className="h-2.5 w-2.5 rounded-full bg-black/15" />
               {project.url && (
-                <span className="ml-3 rounded-md bg-white/[0.05] px-3 py-1 text-[11px] text-silver-dim">
+                <span className="ml-3 rounded-md bg-black/[0.05] px-3 py-1 text-[11px] text-silver-dim">
                   {project.url}
                 </span>
               )}
@@ -108,7 +108,7 @@ function Chapter({ project, index }: { project: Project; index: number }) {
           </div>
 
           {/* phone frame */}
-          <div className="mx-auto w-[62%] overflow-hidden rounded-[2rem] border border-white/[0.12] bg-surface p-2 shadow-[0_40px_120px_-40px_rgba(0,0,0,0.9)] md:w-full">
+          <div className="mx-auto w-[62%] overflow-hidden rounded-[2rem] border border-black/[0.12] bg-surface p-2 shadow-[0_40px_120px_-40px_rgba(10,10,11,0.16)] md:w-full">
             <div className="overflow-hidden rounded-[1.5rem]">
               <Shot
                 src={project.assets.mobile}
@@ -121,7 +121,7 @@ function Chapter({ project, index }: { project: Project; index: number }) {
         </motion.div>
 
         {/* chapter detail */}
-        <div className="mt-16 grid gap-10 border-t border-white/[0.06] pt-12 md:grid-cols-3">
+        <div className="mt-16 grid gap-10 border-t border-black/[0.06] pt-12 md:grid-cols-3">
           <div>
             <p className="text-[12px] uppercase tracking-[0.2em] text-silver-dim">
               Design process
@@ -149,7 +149,7 @@ function Chapter({ project, index }: { project: Project; index: number }) {
               {project.stack.map((t) => (
                 <span
                   key={t}
-                  className="rounded-full border border-white/10 px-3 py-1 text-[12px] text-silver-dim"
+                  className="rounded-full border border-black/10 px-3 py-1 text-[12px] text-silver-dim"
                 >
                   {t}
                 </span>

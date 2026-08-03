@@ -36,7 +36,7 @@ export default function Interlude({
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "radial-gradient(50% 50% at 50% 50%, rgba(150,160,170,0.07), transparent 70%)",
+            "radial-gradient(50% 50% at 50% 50%, rgba(10,10,11,0.07), transparent 70%)",
         }}
       />
       <motion.div
