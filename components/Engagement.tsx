@@ -7,7 +7,10 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 export default function Engagement() {
   return (
-    <section id="engagement" className="relative overflow-hidden py-28 md:py-40">
+    <section
+      id="engagement"
+      className="section-divide relative overflow-hidden py-28 md:py-40"
+    >
       {/* faint ambient glow */}
       <div
         className="pointer-events-none absolute inset-0"

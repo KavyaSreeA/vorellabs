@@ -19,7 +19,10 @@ const ease = [0.22, 1, 0.36, 1] as const;
 
 export default function DeepTech() {
   return (
-    <section id="deeptech" className="relative overflow-hidden py-28 md:py-40">
+    <section
+      id="deeptech"
+      className="section-divide relative overflow-hidden py-28 md:py-40"
+    >
       <div
         className="pointer-events-none absolute inset-0"
         style={{

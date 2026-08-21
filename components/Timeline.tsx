@@ -42,7 +42,7 @@ export default function Timeline() {
   const height = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
   return (
-    <section className="relative py-28 md:py-40">
+    <section className="section-divide relative py-28 md:py-40">
       <div className="shell">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -59,7 +59,7 @@ export default function Timeline() {
 
         <div ref={ref} className="relative">
           {/* progress rail — sits on the divider between year and content */}
-          <div className="absolute left-[64px] top-0 h-full w-px bg-black/[0.08] md:left-[120px]">
+          <div className="absolute left-[64px] top-0 h-full w-px bg-black/[0.12] md:left-[120px]">
             <motion.div
               style={{ height }}
               className="w-px bg-gradient-to-b from-black to-silver-dim"

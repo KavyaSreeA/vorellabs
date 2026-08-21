@@ -9,7 +9,7 @@ export default function Founder() {
   const ease = [0.22, 1, 0.36, 1] as const;
 
   return (
-    <section className="relative py-28 md:py-40">
+    <section className="section-divide relative py-28 md:py-40">
       <div className="shell">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -31,7 +31,7 @@ export default function Founder() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.9, ease }}
-            className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-black/[0.08]"
+            className="shadow-lift relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-black/[0.1]"
           >
             <div
               className="absolute inset-0"

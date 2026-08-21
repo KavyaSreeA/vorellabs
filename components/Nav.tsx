@@ -30,7 +30,7 @@ export default function Nav() {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed inset-x-0 top-0 z-50 border-b border-black/[0.06] bg-white/70 backdrop-blur-xl"
+          className="fixed inset-x-0 top-0 z-50 border-b border-black/[0.07] bg-white/75 shadow-[0_1px_0_rgba(10,10,11,0.03),0_12px_28px_-20px_rgba(10,10,11,0.18)] backdrop-blur-xl"
         >
           <nav className="shell flex h-[64px] items-center justify-between">
             <a href="#top" className="flex items-center gap-2.5">

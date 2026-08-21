@@ -88,20 +88,50 @@ html.lenis body {
   .glass {
     background: linear-gradient(
       160deg,
-      rgba(255, 255, 255, 0.9) 0%,
-      rgba(255, 255, 255, 0.55) 100%
+      rgba(255, 255, 255, 0.92) 0%,
+      rgba(255, 255, 255, 0.6) 100%
     );
-    border: 1px solid rgba(10, 10, 11, 0.08);
+    border: 1px solid rgba(10, 10, 11, 0.1);
+    box-shadow:
+      0 1px 2px rgba(10, 10, 11, 0.03),
+      0 20px 44px -26px rgba(10, 10, 11, 0.18);
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
   }
 
   .hairline {
-    border-color: rgba(10, 10, 11, 0.08);
+    border-color: rgba(10, 10, 11, 0.1);
   }
 
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-[11px] font-medium uppercase tracking-[0.28em] text-silver-dim;
+    @apply relative inline-flex items-center gap-2.5 pl-4 text-[11px] font-medium uppercase tracking-[0.28em] text-silver-dim;
+  }
+  .eyebrow::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    transform: translateY(-50%);
+    border-radius: 999px;
+    background: rgba(10, 10, 11, 0.55);
+  }
+  /* Soft elevation — reusable depth for cards, frames, and primary buttons */
+  .shadow-soft {
+    box-shadow:
+      0 1px 2px rgba(10, 10, 11, 0.04),
+      0 14px 32px -18px rgba(10, 10, 11, 0.16);
+  }
+  .shadow-lift {
+    box-shadow:
+      0 1px 2px rgba(10, 10, 11, 0.05),
+      0 26px 56px -24px rgba(10, 10, 11, 0.22);
+  }
+
+  /* Consistent hairline divider between major sections */
+  .section-divide {
+    border-top: 1px solid rgba(10, 10, 11, 0.07);
   }
 }
 

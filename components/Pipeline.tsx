@@ -49,7 +49,7 @@ export default function Pipeline() {
     <section
       id="pipeline"
       ref={sectionRef}
-      className="relative"
+      className="section-divide relative"
       style={{ height: `${PIPELINE.length * 60}vh` }}
     >
       <div className="sticky top-0 flex min-h-screen items-center overflow-hidden py-24">
@@ -142,7 +142,7 @@ export default function Pipeline() {
                         initial={{ opacity: 0, y: 8 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.15 + ti * 0.06, duration: 0.4 }}
-                        className="rounded-lg border border-black/[0.08] bg-black/[0.02] px-3.5 py-1.5 text-[13px] text-silver"
+                        className="shadow-[0_1px_2px_rgba(10,10,11,0.04)] rounded-lg border border-black/10 bg-white px-3.5 py-1.5 text-[13px] text-silver"
                       >
                         {t}
                       </motion.span>

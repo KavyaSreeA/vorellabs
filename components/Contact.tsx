@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative flex min-h-[90vh] items-center overflow-hidden py-28"
+      className="section-divide relative flex min-h-[90vh] items-center overflow-hidden py-28"
     >
       <div
         className="pointer-events-none absolute inset-0"
@@ -53,7 +53,7 @@ export default function Contact() {
           <Magnetic>
             <a
               href={`mailto:${FOUNDER.email}`}
-              className="group inline-flex items-center gap-2 rounded-full bg-silver-light px-8 py-3.5 text-sm font-medium text-base transition-transform duration-300 hover:-translate-y-0.5"
+              className="shadow-lift group inline-flex items-center gap-2 rounded-full bg-silver-light px-8 py-3.5 text-sm font-medium text-base transition-transform duration-300 hover:-translate-y-0.5"
             >
               {FOUNDER.email}
               <span className="transition-transform duration-300 group-hover:translate-x-1">

@@ -68,11 +68,15 @@ export default function FounderStory() {
   });
 
   return (
-    <section id="story" ref={ref} className="relative h-[260vh]">
+    <section
+      id="story"
+      ref={ref}
+      className="section-divide relative h-[260vh]"
+    >
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <div className="shell grid w-full items-center gap-10 md:grid-cols-2 md:gap-16">
           {/* crossfading photography */}
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-black/[0.08]">
+          <div className="shadow-lift relative aspect-[4/5] w-full overflow-hidden rounded-2xl border border-black/[0.1]">
             {FOUNDER.photos.map((p, i) => (
               <Photo key={p.src} src={p.src} label={p.label} active={i === index} />
             ))}
