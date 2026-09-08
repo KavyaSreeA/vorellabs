@@ -4,8 +4,8 @@ The site renders fully without these (elegant fallbacks stand in). Add the real
 files at these exact paths and they appear automatically — no code changes.
 
 ## Logo (optional)
-The mark is drawn in code (SVG in the nav/footer, a 3D V monolith in the hero),
-so a logo file is **not required**. If you want your raster mark anywhere, drop:
+The mark is drawn in code (SVG in the nav/footer), so a logo file is **not
+required**. If you want your raster mark anywhere, drop:
 ```
 public/logo.png            # transparent PNG, square, ~512px
 ```
