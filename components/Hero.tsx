@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { STATS } from "@/lib/content";
 
 const ease = [0.22, 1, 0.36, 1] as const;
 
@@ -22,24 +23,21 @@ export default function Hero() {
         </motion.p>
 
         <motion.h1
-          className="font-display text-[clamp(2.6rem,7.5vw,6.2rem)] font-semibold leading-[0.98] tracking-tightest text-silver-light"
+          className="font-display text-[clamp(2.4rem,6.2vw,5rem)] font-semibold leading-[0.98] tracking-tightest text-silver-light"
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.1, ease }}
         >
-          We engineer
-          <br />
-          <span className="text-metal">what&rsquo;s next.</span>
+          We turn ambitious ideas into <span className="text-metal">working software.</span>
         </motion.h1>
 
         <motion.p
-          className="mt-8 max-w-md text-[15px] leading-relaxed text-silver"
+          className="mt-8 max-w-xl text-base leading-relaxed text-silver"
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.25 }}
         >
-          An engineering laboratory building intelligent software, AI systems,
-          and research-driven products.
+          We build business websites, full-stack applications and AI-powered products — from first prototype to production.
         </motion.p>
 
         <motion.div
@@ -52,7 +50,7 @@ export default function Hero() {
             href="#work"
             className="rounded-full bg-silver-light px-7 py-3 text-sm font-medium text-base transition-transform duration-300 hover:-translate-y-0.5"
           >
-            See our work
+            Explore our work
           </a>
           <a
             href="#contact"
@@ -61,6 +59,22 @@ export default function Hero() {
             Start a project
           </a>
         </motion.div>
+
+        <motion.dl
+          className="mt-16 grid w-full max-w-3xl grid-cols-2 gap-x-8 gap-y-8 border-t border-black/[0.08] pt-8 md:grid-cols-4"
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.5 }}
+        >
+          {STATS.map((s) => (
+            <div key={s.label} className="text-center md:text-left">
+              <dt className="font-display text-2xl font-semibold text-silver-light md:text-3xl">
+                {s.value}
+              </dt>
+              <dd className="mt-1 text-[12px] leading-snug text-silver-dim">{s.label}</dd>
+            </div>
+          ))}
+        </motion.dl>
       </div>
     </section>
   );

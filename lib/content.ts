@@ -3,12 +3,45 @@
  * and the creative direction. Swap copy here rather than editing components.
  */
 
-export const BOOT_MESSAGES = [
-  "Initializing Research…",
-  "Loading Systems…",
-  "Compiling Intelligence…",
-  "Rendering Experiences…",
-  "Launching…",
+export const STATS = [
+  { value: "5+", label: "Production sites shipped" },
+  { value: "SIH 2025", label: "National hackathon winner" },
+  { value: "750+", label: "Teams · ACM CodHer'25 runner-up" },
+  { value: "Top 12", label: "Tamil Nadu Police Hackathon" },
+];
+
+export const SERVICES = [
+  {
+    n: "01",
+    name: "Websites & Digital Experiences",
+    body: "Business websites, landing pages and redesigns that load fast and are easy to find.",
+    deliver: ["Responsive design", "SEO-ready build", "Domain, DNS & SSL setup", "Deployment"],
+  },
+  {
+    n: "02",
+    name: "Full-Stack Applications",
+    body: "Database-backed products your team or customers log in to and use every day.",
+    deliver: ["Dashboards & admin panels", "Authentication", "APIs & integrations", "Database design"],
+  },
+  {
+    n: "03",
+    name: "AI Integration & Automation",
+    body: "LLM-powered features and workflow automation that remove repetitive manual work.",
+    deliver: ["Document processing", "Chatbots & assistants", "Multi-agent workflows", "Retrieval (RAG) search"],
+  },
+  {
+    n: "04",
+    name: "Product Engineering",
+    body: "MVP development through to launch, with continued improvements after release.",
+    deliver: ["MVP build", "Third-party integrations", "Production deployment", "Ongoing iteration"],
+  },
+];
+
+export const PROJECT_TYPES = [
+  "Website",
+  "Web app",
+  "AI automation",
+  "Something else",
 ];
 
 export const FOUNDER = {
@@ -86,17 +119,6 @@ export const PIPELINE = [
     body: "Hardening, optimization, and iteration — so the system keeps performing as usage and ambition grow.",
     tech: ["Performance", "SEO", "Infra", "Maintenance"],
   },
-];
-
-export const DEEP_TECH = [
-  "AI Systems",
-  "LLM Applications",
-  "Multi-Agent Systems",
-  "Computer Vision",
-  "MLOps",
-  "Cloud Infrastructure",
-  "Data Engineering",
-  "Product Engineering",
 ];
 
 export const ENGAGEMENT = [

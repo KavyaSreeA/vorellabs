@@ -7,7 +7,7 @@ const NAV = [
   { label: "Story", href: "#story" },
   { label: "Work", href: "#work" },
   { label: "Pipeline", href: "#pipeline" },
-  { label: "Deep Tech", href: "#deeptech" },
+  { label: "Services", href: "#services" },
 ];
 
 export default function Footer({ className = "" }: { className?: string }) {

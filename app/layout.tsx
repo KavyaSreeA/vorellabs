@@ -15,23 +15,17 @@ const space = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Vorel Labs — Building Tomorrow",
+  metadataBase: new URL("https://www.vorellabs.in"),
+  title: "Vorel Labs — Websites, Full-Stack Apps & AI Automation",
   description:
-    "Vorel Labs is an engineering laboratory building intelligent software, AI systems, and research-driven products. Software. AI. Research.",
-  keywords: [
-    "AI",
-    "software engineering",
-    "LLM applications",
-    "multi-agent systems",
-    "computer vision",
-    "MLOps",
-    "product engineering",
-    "Vorel Labs",
-  ],
+    "Vorel Labs is a software engineering studio in Chennai. We build business websites, full-stack applications and AI-powered products, from prototype to production.",
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Vorel Labs — Building Tomorrow",
+    title: "Vorel Labs — Websites, Full-Stack Apps & AI Automation",
     description:
-      "An engineering laboratory building intelligent software, AI systems, and research-driven products.",
+      "We turn ambitious ideas into working software: websites, full-stack applications and AI automation.",
+    url: "/",
+    siteName: "Vorel Labs",
     type: "website",
   },
 };

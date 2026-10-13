@@ -5,10 +5,11 @@ import { motion } from "framer-motion";
 import Logo from "./Logo";
 
 const LINKS = [
-  { label: "Story", href: "#story" },
+  { label: "About", href: "#story" },
   { label: "Work", href: "#work" },
-  { label: "Pipeline", href: "#pipeline" },
-  { label: "Deep Tech", href: "#deeptech" },
+  { label: "Services", href: "#services" },
+  { label: "Process", href: "#pipeline" },
+  { label: "Pricing", href: "#engagement" },
 ];
 
 export default function Nav() {
@@ -55,7 +56,7 @@ export default function Nav() {
             href="#contact"
             className="hidden rounded-full border border-black/15 px-5 py-2 text-[13px] font-medium text-silver-light transition-all duration-300 hover:border-black/40 hover:bg-black/[0.04] md:inline-flex"
           >
-            Start a project
+            Contact
           </a>
           <button
             aria-label="Toggle menu"
@@ -99,7 +100,7 @@ export default function Nav() {
             onClick={() => setOpen(false)}
             className="mt-2 inline-flex w-fit rounded-full border border-black/15 px-5 py-2 text-sm text-silver-light"
           >
-            Start a project
+            Contact
           </a>
         </div>
       </motion.div>

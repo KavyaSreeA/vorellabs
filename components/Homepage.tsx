@@ -8,11 +8,12 @@ import Timeline from "./Timeline";
 import Work from "./Work";
 import Interlude from "./Interlude";
 import Pipeline from "./Pipeline";
-import DeepTech from "./DeepTech";
+import Services from "./Services";
 import Engagement from "./Engagement";
 import Founder from "./Founder";
 import Contact from "./Contact";
 import Footer from "./Footer";
+import FloatingChat from "./FloatingChat";
 
 /** The whole website — renders straight away, no loading gate. */
 export default function Homepage() {
@@ -32,14 +33,15 @@ export default function Homepage() {
 
         <Interlude lead="Software. AI." emphasis="Research." />
 
+        <Services />
         <Pipeline />
-        <DeepTech />
         <Engagement />
         <Founder />
         <Contact />
       </main>
 
       <Footer className="relative z-10" />
+      <FloatingChat />
     </>
   );
 }
